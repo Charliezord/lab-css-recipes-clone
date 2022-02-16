@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+*/
+/* whole body css */
+
+*, html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: roboto, sans-serif;
+    font-weight: 300;
+}
+
+/* image & title */
+
+.header img{
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 650px;
+    width: 100%;
+    object-fit: cover;
+    z-index: -10;
+}
+
+.header h2{
+    display: flex;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    padding-top: 300px;
+    padding-bottom: 300px;
+    font-size: 50px;
+    font-weight: 300;
+}
+
+/*introduction text & cooking instructions image */
+
+#introduction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+.intro-container {
+    padding: 0 140px;
+    margin: 0 50px;
+    height: 150px;
+
+}
+
+.intro-container p{
+    padding-bottom: 10px;
+}
+
+.intro-container img {
+    width: 400px;
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+}
+
+
+.intro-container.solid {
+    border-top: 2px solid #bbb;
+    margin-top: 20px;
+}
+
+
+ingredients text &  instructions image
+
+#ingredients {
+    display: flex;
+    height: 400px;
+    border: 1px solid black
+
+}
+
+.ingredients-container {
+    padding: 0 140px;
+    margin: 0 50px;
+    height: 350px;
+    
+}
+
+.ingredients-container h3{
+ font-size: 16px;
+ padding-bottom: 10px;
+}
+
+.ingredients-container p{
+    font-size: 12px;
+    width: 100%;
+}
+
+  ul.dashed {
+    list-style-type: none;
+  }
+  ul.dashed > li {
+    text-indent: -5px;
+  }
+  ul.dashed > li:before {
+    content: "-";
+    text-indent: -5px;
+  }
+.ingredients-container img {
+    width: 350px;
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+}
+
+.ingredients-container.solid {
+    border-top: 2px solid #bbb;
+    margin-top: 20px;
+}
+
+/*directions text  */
+
+
+#Directions {
+    display: flex;
+    justify-content: center;
+    height: 250px;
+}
+
+.Directions-container {
+    padding: 0 100px;
+    margin: 0 50px;
+}
+
+.Directions-container h3 {
+    font-size: 16px;
+    margin-left: 40px;
+    padding-bottom: 20px;
+}
+
+.ol-container{
+    margin-left: 60px;
+}
+
+ol.brackets{
+        list-style-type: none;
+}
+
+ol.brackets {
+    counter-reset: list;
+    margin: 0;
+}
+
+ol.brackets > li {
+    list-style: none;
+    position: relative;
+}
+
+ol.brackets > li:before {
+    counter-increment: list;
+    content: counter(list, decimal) ") ";
+    position: absolute;
+    left: -1.4em;
+}
+
